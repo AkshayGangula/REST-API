@@ -2,7 +2,7 @@ name: Deployment
 on:
   push:
     branches:
-      - main
+      - master
       - dev
 env:
   MONGODB_DB_NAME: gha-demo
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
       - name: Run server
         run: npm start & npx wait-on http://127.0.0.1:$PORT
-      - name: Run tests
+      - name: Run Tests
         run: npm test
       - name: Output information
         run: |
