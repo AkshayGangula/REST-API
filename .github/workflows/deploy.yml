@@ -10,7 +10,7 @@ jobs:
   test:
     env: 
       MONGODB_CLUSTER_ADDRESS: cluster0.epwdn.mongodb.net
-      MONGODB_USERNAME: axayreddy
+      MONGODB_USERNAME: akshayusa2024
       MONGODB_PASSWORD: dbUserPassword
       PORR: 3000
     environment: testing
